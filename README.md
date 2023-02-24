@@ -13,7 +13,9 @@ Which features you included
 
 ## References
 -[Juice it or lose it — a talk by Martin Jonasson & Petri Purho] https://www.youtube.com/watch?v=Fy0aCDmgnxg
+
 -[Orbitron Typeface] https://www.theleagueofmoveabletype.com/orbitron
+
 -[Open Color open source color scheme] https://yeun.github.io/open-color/
 
 ## Future Development
