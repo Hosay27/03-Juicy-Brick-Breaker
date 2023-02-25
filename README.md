@@ -9,7 +9,10 @@ Description
 ## Implementation
 
 Which features you included
+
 -sprites
+
+-music and sound effects
 
 ## References
 -[Juice it or lose it — a talk by Martin Jonasson & Petri Purho] https://www.youtube.com/watch?v=Fy0aCDmgnxg
@@ -18,8 +21,11 @@ Which features you included
 
 -[Open Color open source color scheme] https://yeun.github.io/open-color/
 
+-[Main menu and level music] https://opengameart.org/content/5-chiptunes-action
+
 ## Future Development
 
+none
 
 ## Created by
 Jose Bautista-Martinez
