@@ -14,6 +14,18 @@ func _ready():
 func _physics_process(_delta):
 	target.x = clamp(target.x, 0, Global.VP.x - 2*width)
 	position = target
+	var ball_container = get_node_or_null("/root/Game/Ball_Container")
+	if ball_container != null and ball_container.get_child_count() > 0:
+		var ball = ball_container.get_child(0)
+		$Eye1/Pupil/Sprite.position.x = 7
+		$Eye2/Pupil/Sprite.position.x = 7
+		$Eye1/Pupil.look_at(ball.position)
+		$Eye2/Pupil.look_at(ball.position)
+		var d = ((($Mouth.global_position.y - ball.global_position.y)/Global.VP.y)-0.2)*2
+		d = clamp(d, -1, 1)
+		$Mouth.scale.y = d
+	if $Images/Highlight.modulate.a > 0:
+		$Images/Highlight.modulate.a -= decay
 	for c in $Powerups.get_children():
 		c.payload()
 
@@ -22,7 +34,14 @@ func _input(event):
 		target.x += event.relative.x
 
 func hit(_ball):
-	pass
+	var paddle_sound = get_node_or_null("/root/Game/Paddle_Sound")
+	if paddle_sound != null:
+		paddle_sound.play()
+	$Images/Highlight.modulate.a = 1
+	$Balleffect.emitting = true
+	$Tween.interpolate_property($Images/paddle, "position:y", 25, 0, 0.6, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
+	$Tween.interpolate_property($Images/Highlight, "position:y", 25, 0, 0.6, Tween.TRANS_BOUNCE, Tween.EASE_OUT)
+	$Tween.start()
 
 func powerup(payload):
 	for c in $Powerups.get_children():

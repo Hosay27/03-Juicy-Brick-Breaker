@@ -1,6 +1,12 @@
 extends Area2D
 
 var payload = null
+var sprite = null
+
+var sprites = [
+	load("res://Assets/powerup.png"),
+	load("res://Assets/addball.png"),
+]
 
 var payloads = [
 	load("res://Powerups/Payload_Grow.tscn")
@@ -9,12 +15,13 @@ var payloads = [
 	,load("res://Powerups/Payload_AddBall.tscn")
 ]
 
-var grav_force = 1.0
+var grav_force = 0.1
 var velocity = Vector2.ZERO
 
 func _ready():
 	randomize()
 	payload = payloads[wrapi(randi(), 0, len(payloads))]
+
 
 func _physics_process(_delta):
 	position += velocity

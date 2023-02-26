@@ -1,12 +1,18 @@
 extends StaticBody2D
 
-var decay = 0.01
+var decay = 0.02
 
 func _ready():
 	pass
 
 func _physics_process(_delta):
-	pass
+	if $ColorRect.color.s > 0:
+		$ColorRect.color.s -= decay
+	if $ColorRect.color.v < 1:
+		$ColorRect.color.v += decay
 
 func hit(_ball):
-	pass
+	$ColorRect.color = Color8(25,113,194)
+	var wall_sound = get_node_or_null("/root/Game/Wall_Sound")
+	if wall_sound != null:
+		wall_sound.play()
