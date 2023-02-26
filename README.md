@@ -10,9 +10,21 @@ Description
 
 Which features you included
 
--sprites
+-most sprites made by me, ones i didnt make are in references
 
--music and sound effects
+-menu music, in game music, and sound effects
+
+-Screen shake when ball hits the wall, brick, paddle, or dies
+
+-comet trail for the ball
+
+-particles when the ball hits the paddle and the bricks
+
+-face with a mouth that frowns depending on balls y position and eyes that follow the ball
+
+-color changing background for menu and ocean background for the levels
+
+-"cool" color scheme for bricks, paddle, ball, background, text, and fever bar
 
 ## References
 -[Juice it or lose it — a talk by Martin Jonasson & Petri Purho] https://www.youtube.com/watch?v=Fy0aCDmgnxg
@@ -23,12 +35,15 @@ Which features you included
 
 -[Main menu and level music] https://opengameart.org/content/5-chiptunes-action
 
--[Paddle and Ball dying sounds] https://opengameart.org/content/ui-sound-effects-button-clicks-user-feedback-notifications
+-[Paddle sound] https://opengameart.org/content/ui-sound-effects-button-clicks-user-feedback-notifications
 
 -[Ocean Background] https://opengameart.org/content/ocean-background
+
 ## Future Development
 
-none
+-different sprites for powerups
+
+-different bricks
 
 ## Created by
 Jose Bautista-Martinez
