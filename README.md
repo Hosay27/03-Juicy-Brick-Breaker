@@ -23,6 +23,7 @@ Which features you included
 
 -[Main menu and level music] https://opengameart.org/content/5-chiptunes-action
 
+-[Paddle and Ball dying sounds] https://opengameart.org/content/ui-sound-effects-button-clicks-user-feedback-notifications
 ## Future Development
 
 none
