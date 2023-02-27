@@ -30,7 +30,7 @@ Which features you included
 ## References
 -[Juice it or lose it — a talk by Martin Jonasson & Petri Purho] https://www.youtube.com/watch?v=Fy0aCDmgnxg
 
--[Tool used to create the sprite] piskelapp.com
+-[Tool used to create the sprite] https://www.piskelapp.com/
 
 -[Orbitron Typeface] https://www.theleagueofmoveabletype.com/orbitron
 
